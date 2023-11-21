@@ -1,52 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <title>Employment History - Your Name</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Employment History - [Your Name]</title>
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            /* Additional styles */
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 1px 0;
+        }
+        .mainMenu {
+            list-style: none;
+            padding: 22px 0 15px 0;
+            text-align: center;
+        }
+        .mainMenu li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .mainMenu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .mainMenu .employment a {
+            text-decoration: underline; /* Indicates the current page */
+        }
+        .subMenu {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .subMenu li {
+            display: inline;
+            margin-right: 20px;
+        }
+        .subMenu a {
+            color: white;
+            text-decoration: none;
+        }
+        /* Additional custom styles */
+    </style>
 </head>
 <body>
-    <div class="window" style="width: 800px; margin: 20px auto;">
-        <div class="title-bar">
-            <div class="title-bar-text">Employment History</div>
-        </div>
-        <div class="window-body">
-            <h2>Current or Most Recent Position</h2>
-            <p><strong>Job Title at Company Name</strong></p>
-            <p><em>Month Year - Present/Month Year</em></p>
-            <ul>
-                <li>Key responsibility or achievement</li>
-                <li>Another responsibility or achievement</li>
-                <!-- Add more as needed -->
-            </ul>
-            
-            <h2>Previous Position</h2>
-            <p><strong>Job Title at Company Name</strong></p>
-            <p><em>Month Year - Month Year</em></p>
-            <ul>
-                <li>Key responsibility or achievement</li>
-                <li>Another responsibility or achievement</li>
-                <!-- Add more as needed -->
-            </ul>
-            
-            <!-- Repeat the section above for each position you held -->
-
-        </div>
-    </div>
-
-    <nav class="menu-bar">
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Skill Sets</a></li>
-            <li><a href="employment.html" class="menu-item-active">Employment History</a></li>
+    <header>
+        <img style="height: auto; width: 65%;" src="./your-logo.png" alt="Your Logo">
+        <ul class="mainMenu">
+            <li class="home"><a href="index.html">HOME</a></li>
+            <li class="about"><a href="About.html">ABOUT</a></li>
+            <li class="projects"><a href="projects.html">PROJECTS</a></li>
+            <li class="skills"><a href="skills.html">SKILL SETS</a></li>
+            <li class="employment"><a href="employment.html">EMPLOYMENT HISTORY</a></li>
         </ul>
-    </nav>
+        <ul class="subMenu">
+            <!-- Your social media links -->
+            <li><a href="your-social-media-link" target="_blank">Social Media</a></li>
+            <!-- More social media links -->
+        </ul>
+    </header>
+    
+    <main>
+        <section id="employment">
+            <h1>Employment History</h1>
+            <!-- Employment Entry -->
+            <article>
+                <h2>Job Title - Company Name</h2>
+                <p>Month Year - Month Year</p>
+                <ul>
+                    <li>Key responsibility or achievement</li>
+                    <li>Another responsibility or achievement</li>
+                    <!-- Add more responsibilities or achievements as needed -->
+                </ul>
+            </article>
+            <!-- Repeat the article block for each position held -->
+        </section>
+    </main>
 
-    <footer class="status-bar">
-        <p>© [Year] - [Your Name]. All rights reserved.</p>
-    </footer>
+    <!-- Optional: Include scripts or additional code here -->
 </body>
 </html>
