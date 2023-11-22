@@ -48,9 +48,15 @@
             color: white;
             text-decoration: none;
         }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* this will take the full viewport height */
+}
         .resize-image {
-            width: 80px;
-            height: 80px;
+            width: 150px;
+            height: 150px;
         }
         /* Additional custom styles */
     </style>
@@ -74,7 +80,9 @@
     <main>
         <section id="home">
             <h1>Welcome to My Professional Portfolio</h1>
+            <div class="image-container">
             <img src="BrodyGrad-80.jpg" alt="Professional Photo" class="resize-image">
+              </div>
             <p>Introduction about the purpose of the site and a brief overview of what visitors can find here.</p>
         </section>
     </main>
